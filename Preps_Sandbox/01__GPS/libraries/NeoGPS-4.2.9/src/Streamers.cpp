@@ -442,6 +442,7 @@ void trace_header( Print & outs )
   outs.print( (const __FlashStringHelper *) &gps_fix_header[0] );
   outs.print( (const __FlashStringHelper *) &NMEAGPS_header[0] );
 
+  outs << '\r';
   outs << '\n';
 }
 
@@ -484,6 +485,6 @@ void trace_all( Print & outs, const NMEAGPS &gps, const gps_fix &fix )
          << gps.statistics.chars  << ',';
   #endif
 
-  outs << '\n';
+  outs << '\r';
 
 } // trace_all

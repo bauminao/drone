@@ -40,6 +40,7 @@ static void doSomeWork()
   // Print all the things!
 
   trace_all( DEBUG_PORT, gps, fix );
+  DEBUG_PORT.println("");
 
 } // doSomeWork
 
@@ -59,7 +60,7 @@ static void GPSloop()
 
 void setup()
 {
-  DEBUG_PORT.begin(9600);
+  DEBUG_PORT.begin(115200);
   while (!DEBUG_PORT)
     ;
 
