@@ -2,6 +2,8 @@
 
 ## Arduino-CLI
 
+* [Arduino-CLI HP](https://arduino.github.io/arduino-cli)
+
 ### General
 
 `arduino-cli core update-index`
